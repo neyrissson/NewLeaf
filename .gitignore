@@ -1,0 +1,65 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-demo
+dist-share
+build-share
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Dev/debug scratch — one-off scripts and captures from building this out,
+# not part of the app itself
+build_output.txt
+tsc_output.txt
+convert_companies.py
+generated_companies.ts
+ddg.html
+export_csv.js
+patch_greenhouse.js
+patch_greenhouse_2.js
+patch_greenhouse_3.js
+patch_newleaf.sh
+sort_jobs.js
+test_regex.js
+test_scraper.js
+patches_from_claude/
+
+# Her real target-company list (with notes about her own background) — personal, never published.
+# jobs.ts loads it if present; a clone without it starts with no companies. Back it up separately.
+src/data/seed.private.ts
+
+# Patches/repackages the installed real-app bundle on this machine specifically —
+# not relevant to building the demo from source
+repackage.command
+package-share.command
+repackage-demo.command
+# Where the shareable build is published (a personal cloud-folder path)
+.share-dir
+
+# Superseded by vite.config.js (kept as .js to dodge an iCloud Drive EPERM issue)
+vite.config.ts
+
+# Unused icon iterations — only final_tree_icon_fixed.icns, favicon.svg and
+# icon_converted.png (the top-bar logo in App.tsx) are actually referenced
+public/final_tree_icon_tighter.icns
+public/job_tree_icon.icns
+public/icons.svg
